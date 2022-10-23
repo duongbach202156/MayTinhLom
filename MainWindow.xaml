@@ -1,0 +1,33 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="May tinh lom" Height="200" Width="200">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="Width" Value="37.5" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+        <StackPanel Background="Gray">
+            <TextBox Margin="5" x:Name="ToanHang1" Text="1" />
+            <TextBox Margin="5" x:Name="ToanHang2" Text="2" />
+            <TextBlock Margin="5" x:Name="KetQua" Text="Ket qua" />
+        </StackPanel>
+      
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Background="Red">
+            <Button Click="Button_Click">Cong</Button>
+            <Button Click="Button_Click_1">Tru</Button>
+            <Button Click="Button_Click_2">Nhan</Button>
+            <Button Click="Button_Click_3">Chia</Button>
+        </StackPanel>
+    </Grid>
+</Window>

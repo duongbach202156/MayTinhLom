@@ -6,12 +6,7 @@
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
         Title="May tinh lom" Height="200" Width="200">
-    <Window.Resources>
-        <Style TargetType="Button">
-            <Setter Property="Margin" Value="5" />
-            <Setter Property="Width" Value="37.5" />
-        </Style>
-    </Window.Resources>
+   
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition />
